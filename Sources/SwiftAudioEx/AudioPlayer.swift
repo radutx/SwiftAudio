@@ -103,6 +103,10 @@ public class AudioPlayer: AVPlayerWrapperDelegate {
     public var playerState: AudioPlayerState {
         wrapper.state
     }
+    
+    public var playerItem: AVPlayerItem? {
+        wrapper.currentItem
+    }
 
     // MARK: - Setters for AVPlayerWrapper
 
